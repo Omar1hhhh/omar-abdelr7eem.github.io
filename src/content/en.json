@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Omar Abdelr7eem — AI & Automation · UI/UX · Software",
+    "description": "Omar Abdelr7eem builds digital products and experiences where AI, automation, design, and software come together."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "lang": "Switch to Arabic",
+    "socials": "Social links"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "journey": "Journey",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "AI & Automation · UI/UX · Software",
+    "name": "OMAR ABDELR7EEM",
+    "headline": "I build digital products and experiences where AI, design, and software come together. I build, design, and automate.",
+    "fields": [
+      "AI & Automation",
+      "UI/UX Design",
+      "Software & Web Development"
+    ],
+    "ctaPrimary": "Let's build something",
+    "ctaSecondary": "Who I am",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About",
+    "paragraphs": [
+      "I am Omar Abdelr7eem, a creative technologist focused on building digital products and systems where AI, design, and software development meet.",
+      "I approach problems as complete systems: understand the problem and the people first, shape the experience, then build the solution and automate what can be improved.",
+      "My work focuses on AI and automation, supported by a strong interest in UI/UX design and software development."
+    ],
+    "principles": [
+      {
+        "title": "Systems over screens",
+        "text": "I don't treat the interface as an isolated layer. I think about the complete experience, system, and user flow."
+      },
+      {
+        "title": "Design with purpose",
+        "text": "Visual quality matters, but clarity, usability, accessibility, and performance matter more than decoration alone."
+      },
+      {
+        "title": "Automate the repeatable",
+        "text": "When a task keeps repeating, it can often become an automated workflow that saves time and reduces manual effort."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "intro": "Three primary fields, with graphic design as a complementary craft.",
+    "groups": [
+      {
+        "title": "AI & Automation",
+        "tagline": "Turning ideas and processes into smarter systems.",
+        "items": [
+          "Workflow automation",
+          "AI model integration",
+          "Prompt & agent design",
+          "API integrations",
+          "n8n automation",
+          "RAG & knowledge systems"
+        ]
+      },
+      {
+        "title": "UI/UX Design",
+        "tagline": "Clear, practical, and user-focused digital experiences.",
+        "items": [
+          "User interface design",
+          "Information architecture",
+          "Wireframing & prototyping",
+          "Design systems",
+          "Interaction & motion design",
+          "Web experience design"
+        ]
+      },
+      {
+        "title": "Software & Web Development",
+        "tagline": "Turning ideas into functional digital products.",
+        "items": [
+          "HTML / CSS / JavaScript",
+          "Web development",
+          "Responsive interfaces",
+          "Supabase & PostgreSQL",
+          "APIs & integrations",
+          "Digital product development"
+        ]
+      },
+      {
+        "title": "Graphic Design",
+        "tagline": "A supporting craft for visual communication.",
+        "items": [
+          "Visual identity",
+          "Layout & typography",
+          "Marketing design",
+          "Digital assets"
+        ],
+        "complementary": true
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "intro": "I turn ideas and problems into practical digital solutions.",
+    "items": [
+      {
+        "title": "AI Workflow Automation",
+        "text": "Designing and building intelligent workflows that reduce manual work and connect the tools and systems your business already uses."
+      },
+      {
+        "title": "AI-Powered Product Features",
+        "text": "Integrating AI capabilities into products and systems in ways that are useful, practical, and built to scale."
+      },
+      {
+        "title": "UI/UX Design",
+        "text": "Designing clear and intuitive digital experiences with attention to usability, interaction, visual detail, and motion."
+      },
+      {
+        "title": "Web & Software Development",
+        "text": "Building modern websites, web applications, and digital systems from concept and design through development and deployment."
+      },
+      {
+        "title": "Visual & Brand Design",
+        "text": "Creating visual identities, graphic assets, and supporting design work that strengthen a product or brand."
+      }
+    ]
+  },
+  "journey": {
+    "title": "Journey",
+    "intro": "A continuous journey from design and development to building intelligent systems.",
+    "note": "Each stage added a new way of understanding problems and building solutions.",
+    "steps": [
+      {
+        "label": "The Beginning",
+        "title": "Exploring Technology & Design",
+        "text": "I started by exploring how digital products are built and how technology and design can come together to create better experiences."
+      },
+      {
+        "label": "Design",
+        "title": "Learning to Think Through the Experience",
+        "text": "My focus expanded from simply creating interfaces to understanding users, flows, visual systems, interaction, and the details that shape a product experience."
+      },
+      {
+        "label": "Building",
+        "title": "Building Products & Systems",
+        "text": "I moved beyond interfaces into building real digital products and systems that connect the experience with data, logic, and integrations."
+      },
+      {
+        "label": "AI",
+        "title": "Automation & Intelligent Systems",
+        "text": "AI and automation became a core part of how I approach digital solutions, focusing on reducing repetitive work and turning processes into smarter systems."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's build something",
+    "intro": "Have an idea, a product to build, or a workflow to automate? Tell me about it.",
+    "socialsPlaceholder": "Set your WhatsApp link in src/content/site.js.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Continue to WhatsApp",
+      "unconfigured": "Set a valid WhatsApp link in src/content/site.js to enable this form."
+    }
+  },
+  "footer": {
+    "name": "Omar Abdelr7eem",
+    "note": "AI & Automation · UI/UX · Software"
+  }
+}

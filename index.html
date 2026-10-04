@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Omar Abdelr7eem — Creative Technologist & Digital Product Builder</title>
+  <meta name="description" content="Omar Abdelr7eem builds digital experiences where AI, design, and technology meet." />
+  <meta name="theme-color" content="#1b2631" />
+  <meta property="og:title" content="Omar Abdelr7eem — Creative Technologist" />
+  <meta property="og:description" content="I build, design, and automate digital experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#about" data-i18n="a11y.skip"></a>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="fallback-bg" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <nav class="nav__inner" aria-label="Primary">
+      <a class="nav__brand" href="#top" aria-label="Omar Abdelr7eem">OA</a>
+      <ul class="nav__links" id="nav-links"></ul>
+      <button class="nav__lang" id="lang-toggle" type="button"></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="section hero" id="hero" data-stage="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow" data-reveal></p>
+        <h1 class="hero__name" id="hero-name"></h1>
+        <p class="hero__headline" data-i18n="hero.headline" data-reveal></p>
+        <ul class="hero__fields" id="hero-fields"></ul>
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn--primary" href="#contact" data-i18n="hero.ctaPrimary"></a>
+          <a class="btn btn--ghost" href="#about" data-i18n="hero.ctaSecondary"></a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span data-i18n="hero.scroll"></span><i></i></div>
+    </section>
+
+    <section class="section about" id="about" data-stage="about">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 class="section__title" data-i18n="about.title" data-reveal></h2>
+        </div>
+        <div id="about-body"></div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" data-stage="skills">
+      <div class="section__inner section__inner--stack">
+        <div class="section__head section__head--wide">
+          <span class="section__index">02</span>
+          <h2 class="section__title" data-i18n="skills.title" data-reveal></h2>
+          <p class="section__intro" data-i18n="skills.intro" data-reveal></p>
+        </div>
+        <ol class="skills__list" id="skills-list"></ol>
+      </div>
+    </section>
+
+    <section class="section services" id="services" data-stage="services">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title" data-i18n="services.title" data-reveal></h2>
+          <p class="section__intro" data-i18n="services.intro" data-reveal></p>
+        </div>
+        <ol class="services__list" id="services-list"></ol>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey" data-stage="journey">
+      <div class="section__inner">
+        <div class="section__head journey__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title" data-i18n="journey.title" data-reveal></h2>
+          <p class="section__intro" data-i18n="journey.intro" data-reveal></p>
+          <p class="edit-note" data-i18n="journey.note"></p>
+        </div>
+        <ol class="journey__list" id="journey-list"></ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" data-stage="contact">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__index">05</span>
+          <h2 class="section__title" data-i18n="contact.title" data-reveal></h2>
+          <p class="section__intro" data-i18n="contact.intro" data-reveal></p>
+          <div class="contact__meta" data-reveal>
+            <p class="contact__email" id="contact-email"></p>
+            <ul class="socials" id="socials"></ul>
+          </div>
+        </div>
+        <form class="contact__form" id="contact-form" data-reveal>
+          <div class="field"><label for="f-name" data-i18n="contact.form.name"></label><input id="f-name" name="name" type="text" required autocomplete="name" /></div>
+          <div class="field"><label for="f-email" data-i18n="contact.form.email"></label><input id="f-email" name="email" type="email" required autocomplete="email" /></div>
+          <div class="field"><label for="f-message" data-i18n="contact.form.message"></label><textarea id="f-message" name="message" required></textarea></div>
+          <p class="form__note" id="form-note" role="status" aria-live="polite"></p>
+          <button class="btn btn--primary" type="submit" data-i18n="contact.form.submit"></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span data-i18n="footer.name"></span>
+    <span data-i18n="footer.note"></span>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
