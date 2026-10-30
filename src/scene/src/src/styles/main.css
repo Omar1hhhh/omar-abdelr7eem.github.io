@@ -38,6 +38,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media (max-width:768px){
   .nav{top:auto;bottom:max(1rem,env(safe-area-inset-bottom))}
   .nav--hidden{transform:translateY(140%)}
+  .nav__inner{max-width:calc(100vw - 2rem);min-width:0}
+  .nav__links{min-width:0;overflow-x:auto;scrollbar-width:none}
+  .nav__links::-webkit-scrollbar{display:none}
   .nav__brand{display:none}
   .nav__links a{padding:.45rem .55rem;font-size:.74rem}
   .nav__lang{font-size:.72rem;padding:.4rem .6rem}
@@ -97,6 +100,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 
 /* Skills */
 .skills__list,.services__list,.journey__list,.socials{list-style:none;padding:0;margin:0}
+.work__list{display:grid;gap:clamp(1.25rem,3vw,2rem);list-style:none;padding:0;margin:0}
 .skill-group{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1.5rem 3rem;padding:2.2rem 0;border-top:1px solid rgba(189,195,199,.12)}
 @media (max-width:899px){.skill-group{grid-template-columns:1fr;padding:2rem 0}}
 .skill-group__n{font-size:.75rem;color:var(--grey);letter-spacing:.3em;display:block;margin-bottom:.75rem}
@@ -128,6 +132,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .journey__step h3{margin:0 0 .75rem;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.1;letter-spacing:-.02em}
 [dir=rtl] .journey__step h3{letter-spacing:0}
 .journey__step p{margin:0;color:var(--silver);max-width:48ch}
+
+/* Selected work */
+.work .section__inner{grid-template-columns:minmax(0,1fr);gap:clamp(2rem,4vw,3.5rem)}
+.work__item{display:grid;grid-template-columns:minmax(0,1fr);padding:clamp(1.5rem,5vw,3.5rem);border:1px solid rgba(189,195,199,.2);border-radius:1.5rem;background:linear-gradient(125deg,rgba(52,73,94,.96),rgba(27,38,49,.98));box-shadow:0 24px 70px rgba(10,17,23,.2);transition:border-color .35s,transform .45s var(--ease)}
+.work__item:hover{border-color:rgba(189,195,199,.38);transform:translateY(-3px)}
+.work__category{margin:0 0 1rem;color:var(--silver);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+[dir=rtl] .work__category{letter-spacing:0;text-transform:none;font-size:.95rem}
+.work__details h3{margin:0 0 1rem;font-size:clamp(2.2rem,5vw,4rem);line-height:1;letter-spacing:.015em}
+.work__details p:last-child{margin:0;color:var(--silver);max-width:58ch;line-height:1.85}
+.work__link{white-space:nowrap;justify-self:start;min-height:3.25rem;margin-top:1.5rem}
+@media (max-width:600px){.work__link{justify-self:stretch;justify-content:center}}
 
 /* Contact */
 .contact__form{display:grid;gap:1.5rem}

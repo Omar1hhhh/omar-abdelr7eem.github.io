@@ -11,6 +11,7 @@ const STAGES = {
   skills:   { morph: 1.1, amp: .5,  camZ: 6.9, ox:  2.8, oy: -.2, s: .96, key: 2.2, rim: 1.65, core: 1.7, spin: .5,  grid: .28 },
   services: { morph: .42, amp: .22, camZ: 7.9, ox:  0,   oy: 1.9, s: .8,  key: 3.1, rim: 1.1, core: 1.05, spin: .12, grid: .36 },
   journey:  { morph: .84, amp: .42, camZ: 6.1, ox: -2.8, oy: -1.1, s: 1.02, key: 2.0, rim: 1.9, core: 1.45, spin: .38, grid: .22 },
+  work:     { morph: .58, amp: .3,  camZ: 6.4, ox:  2.4, oy:  .1, s: .94, key: 2.4, rim: 1.8, core: 1.35, spin: .24, grid: .2 },
   contact:  { morph: .12, amp: .15, camZ: 5.4, ox:  0,   oy:  .4, s: 1.18, key: 2.9, rim: 2.0, core: 2.2, spin: .08, grid: .1 }
 };
 

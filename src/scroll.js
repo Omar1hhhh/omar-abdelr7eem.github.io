@@ -2,7 +2,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-let dynamic = [];
+let dynamicTriggers = [];
+let revealObserver = null;
 
 export function setupScroll(getSceneApi, reduced) {
   if (reduced) return staticMode();
@@ -30,19 +31,25 @@ export function refreshScroll(getSceneApi, reduced) {
 }
 
 function bindDynamic(getSceneApi) {
-  dynamic.forEach(t => t.kill());
-  dynamic = [];
+  dynamicTriggers.forEach(trigger => trigger.kill());
+  dynamicTriggers = [];
+  revealObserver?.disconnect();
 
-  gsap.utils.toArray('[data-reveal]').forEach(el => {
-    const tw = gsap.fromTo(el, { y: 36, opacity: 0 }, {
-      y: 0, opacity: 1, duration: 1.1, ease: 'power3.out',
-      scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      gsap.fromTo(el, { y: 36, opacity: 0 }, {
+        y: 0, opacity: 1, duration: 1.1, ease: 'power3.out'
+      });
+      revealObserver.unobserve(el);
     });
-    dynamic.push(tw.scrollTrigger);
-  });
+  }, { rootMargin: '0px 0px -12% 0px' });
+
+  gsap.utils.toArray('[data-reveal]').forEach(el => revealObserver.observe(el));
 
   const steps = gsap.utils.toArray('.journey__step');
-  steps.forEach((el, i) => dynamic.push(ScrollTrigger.create({
+  steps.forEach((el, i) => dynamicTriggers.push(ScrollTrigger.create({
     trigger: el, start: 'top 60%', end: 'bottom 60%',
     onToggle: self => {
       if (!self.isActive) return;

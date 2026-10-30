@@ -30,6 +30,16 @@ export function renderContent(c) {
       <span class="journey__label">${text(s.label)}</span><h3>${text(s.title)}</h3><p>${text(s.text)}</p>
     </li>`).join('');
 
+  $('work-list').innerHTML = c.work.items.map(project => `
+    <li class="work__item" data-reveal>
+      <div class="work__details">
+        <p class="work__category">${text(project.category)}</p>
+        <h3>${text(project.title)}</h3>
+        <p>${text(project.description)}</p>
+        <a class="btn btn--primary work__link" href="${esc(project.url)}" target="_blank" rel="noopener noreferrer">${text(c.work.visit)}</a>
+      </div>
+    </li>`).join('');
+
   const whatsappUrl = site.whatsappUrl && !isPlaceholder(site.whatsappUrl);
   $('socials').setAttribute('aria-label', c.a11y.socials);
   $('socials').innerHTML = whatsappUrl

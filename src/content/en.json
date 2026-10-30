@@ -13,6 +13,7 @@
     "skills": "Skills",
     "services": "Services",
     "journey": "Journey",
+    "work": "Work",
     "contact": "Contact"
   },
   "hero": {
@@ -153,6 +154,25 @@
         "label": "AI",
         "title": "Automation & Intelligent Systems",
         "text": "AI and automation became a core part of how I approach digital solutions, focusing on reducing repetitive work and turning processes into smarter systems."
+      }
+    ]
+  },
+  "work": {
+    "title": "Selected Work",
+    "intro": "Web projects I take from an idea to a finished visitor experience.",
+    "visit": "Visit website",
+    "items": [
+      {
+        "title": "LUMASUPPLY",
+        "category": "Electrical & lighting store",
+        "description": "A website for an electrical and lighting store, featuring LED and traditional bulbs, ceiling lights, and accessories. It also offers practical guidance to help visitors choose products and ask about details and availability.",
+        "url": "https://omar1hhhh.github.io/luma-supply"
+      },
+      {
+        "title": "Noire",
+        "category": "Interactive 3D fragrance showcase",
+        "description": "An editorial showcase for four selected fragrances, featuring an interactive 3D bottle visitors can explore and turn. Browse the collection with search and filters for brand, audience, price, and scent family. This is a visual demo, with no checkout.",
+        "url": "https://omar1hhhh.github.io/noire-fragrance-showcase/"
       }
     ]
   },
