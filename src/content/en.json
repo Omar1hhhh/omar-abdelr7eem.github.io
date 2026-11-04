@@ -173,6 +173,12 @@
         "category": "Interactive 3D fragrance showcase",
         "description": "An editorial showcase for four selected fragrances, featuring an interactive 3D bottle visitors can explore and turn. Browse the collection with search and filters for brand, audience, price, and scent family. This is a visual demo, with no checkout.",
         "url": "https://omar1hhhh.github.io/noire-fragrance-showcase/"
+      },
+      {
+        "title": "Birds Web",
+        "category": "Pet shop and veterinary booking",
+        "description": "A website for a pet shop where visitors can explore pets and related products, with the option to book an appointment with a veterinarian.",
+        "url": "https://omar1hhhh.github.io/birds-web/shop.html"
       }
     ]
   },
