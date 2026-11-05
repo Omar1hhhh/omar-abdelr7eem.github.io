@@ -156,7 +156,7 @@ function PixelCharacter({ alt }) {
   return (
     <img
       className="pixel-guide__portrait"
-      src="/images/omar-pixel-guide.png"
+      src={`${import.meta.env.BASE_URL}images/omar-pixel-guide.png`}
       alt={alt}
       width="560"
       height="680"
