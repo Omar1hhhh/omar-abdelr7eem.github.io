@@ -1,4 +1,7 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import './scene/src/src/styles/main.css';
+import { VirtualPortfolioGuide } from './guide/VirtualPortfolioGuide.jsx';
 import { createI18n } from './i18n.js';
 import { renderContent } from './src/render.js';
 import { setupHero } from './src/src/hero.js';
@@ -12,6 +15,10 @@ async function bootstrap() {
   let sceneApi = null;
   const i18n = createI18n();
   setupNav(i18n);
+
+  const guideRoot = document.getElementById('portfolio-guide-root');
+  if (!guideRoot) throw new Error('The portfolio guide mount point is missing.');
+  createRoot(guideRoot).render(React.createElement(VirtualPortfolioGuide));
 
   let first = true;
   i18n.onRender(({ lang, content }) => {

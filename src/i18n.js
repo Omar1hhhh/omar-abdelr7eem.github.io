@@ -26,6 +26,7 @@ export function createI18n() {
     });
     localStorage.setItem(KEY, lang);
     listeners.forEach(fn => fn({ lang, content: c }));
+    window.dispatchEvent(new CustomEvent('portfolio:language-change', { detail: { lang } }));
   }
 
   return {
